@@ -1,6 +1,7 @@
 {
     "name": "estd/kirby-modify-text",
     "description": "A plugin to add custom attributes (e.g., styles, classes) to Kirby CMS writer blocks.",
+    "version": "1.0.0",
     "type": "kirby-plugin",
     "license": "MIT",
     "authors": [
@@ -11,21 +12,17 @@
         }
     ],
     "require": {
-        "getkirby/cms": "^3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "VeryRobert\\KirbyModifyText\\": "src/"
-        }
+        "php": ">=8.2",
+        "getkirby/composer-installer": "^1.2"
     },
     "extra": {
         "kirby-plugin-root": "site/plugins/kirby-modify-text"
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "config": {
         "allow-plugins": {
-            "getkirby/composer-installer": false
+            "getkirby/composer-installer": true
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }

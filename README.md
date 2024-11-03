@@ -1,7 +1,7 @@
 
 # Kirby Modify Text
 
-A flexible Kirby CMS plugin to enhance text blocks with custom attributes, classes, inline styles, or even HTML tag replacements, offering more control over content styling.
+A Kirby CMS plugin to modify text blocks with custom attributes, classes, inline styles, or HTML tags, offering more control over text styling.
 
 ## Installation
 
@@ -40,11 +40,18 @@ echo $block->text()->modifyTag([
 ?>
 ```
 
+```php
+
+// Or simply change the tag
+<?= $block->text()->modifyTag(['tag' => 'h2' ])->kt() ?>
+
+```
+
 ### Options
 
 - **`styles`**: An array of inline CSS styles to add to the tag.
 - **`class`**: A string with CSS classes to add. If the tag already has classes, the new ones will be appended.
-- **`tag`**: Specify an HTML tag (e.g., `div`, `span`). If omitted, the original tag remains unchanged.
+- **`tag`**: Specify an HTML tag (e.g., `h2`, `span`). If omitted, the original tag remains unchanged.
 - **`attributes`**: An associative array of additional attributes, such as `data-*` attributes, that will be added to the tag.
 
 ## License

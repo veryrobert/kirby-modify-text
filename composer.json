@@ -1,0 +1,24 @@
+{
+    "name": "estd/kirby-modify-text",
+    "description": "A plugin to add custom attributes (e.g., styles, classes) to Kirby CMS writer blocks.",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Farrelly",
+            "email": "robert@estd.dev",
+            "homepage": "https://github.com/veryrobert/kirby-modify-text"
+        }
+    ],
+    "require": {
+        "getkirby/cms": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VeryRobert\\KirbyModifyText\\": "src/"
+        }
+    },
+    "extra": {
+        "kirby-plugin-root": "site/plugins/kirby-modify-text"
+    }
+}

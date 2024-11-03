@@ -1,0 +1,19 @@
+
+# Ignore node_modules and composer dependencies
+node_modules/
+vendor/
+
+# Ignore Kirby cache and thumbs
+site/cache/
+site/thumbs/
+
+# Ignore temporary files and OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and debug output
+*.log
+
+# Ignore environment configuration files
+.env
+.env.*

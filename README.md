@@ -39,11 +39,19 @@ echo $block->text()->modifyTag([
 
 ?>
 ```
+Or modify the text block as you need
 
 ```php
 
-// Or simply change the tag
-<?= $block->text()->modifyTag(['tag' => 'h2' ])->kt() ?>
+// Change tag
+<?= $block->text()->modifyTag(['tag' => 'h2'])->kt() ?>
+
+// Add styles
+<?= $block->text()->modifyTag(['styles' => ['color: blue', 'font-weight: bold']])->kt() ?>
+
+// Add a attribute
+<?= $block->text()->modifyTag(['attributes' => ['data-info' => 'example']])->kt() ?>
+
 
 ```
 

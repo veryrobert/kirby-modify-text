@@ -20,5 +20,12 @@
     },
     "extra": {
         "kirby-plugin-root": "site/plugins/kirby-modify-text"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "getkirby/composer-installer": false
+        }
     }
 }
